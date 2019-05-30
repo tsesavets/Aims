@@ -34,7 +34,7 @@ async function showOff(phone) {
 };
 
 // фукция на промисах 
-var askMomPromise = function () {
+async  function askMomPromise() {
     willIGetNewPhone
     .then(showOff) // связываем
     .then(function (fulfilled) {
@@ -68,8 +68,8 @@ async function askMomAsync() {
     await askMom();
 })();*/
 
-askMomPromise();
-askMomAsync();
+await askMomPromise();
+await askMomAsync();
 
 // это уже применение промисов для работы со своим .json файлом
 async function httpGet(url) {
