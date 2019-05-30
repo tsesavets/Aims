@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+  <script src= "loadscripts.js" async ></script>
+  <iframe src="https://giphy.com/embed/9xnBgb3KKiaCgIvRCY" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen defer></iframe>
+  <iframe src="https://giphy.com/embed/lleGybkEAdmbVE8cKt" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen defer></iframe>
+  <iframe src="https://vk.com/doc161132176_499281034?hash=835fc996692a8e911d&dl=4bf61f82f0d7298637&wnd=1&module=im&mp4=1" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen defer></iframe>
+
+
+  <button onclick="loadPhones()" id="buttonID">Загрузить phones.json!</button>
+  <button onclick="OnlyPhoneNames(loadPhones)"  id="buttonTest1">Загрузить phoneNames неправильно !</button>
+  <button onclick="loadPhones(OnlyPhoneNames)"  id="buttonTest2">Загрузить phoneNames правильно!</button>
+  <button onclick="loadPhones(OnlyPhoneIDs)"  id="buttonTest3">Загрузить phoneIDs правильно!</button>
+
+  <ol id="listTest"></ol>
+  
+<script src= "promises.js" async></script>
+
+</body>
+</html>
