@@ -64,12 +64,12 @@ async function askMomAsync() {
     console.log('after asking mom');
 }
 
-/*(async () => {
-    await askMom();
-})();*/
-
-await askMomPromise();
-await askMomAsync();
+(async () => {
+    await askMomPromise();
+})();
+(async () => {
+    await askMomAsync();
+})();
 
 // это уже применение промисов для работы со своим .json файлом
 async function httpGet(url) {
